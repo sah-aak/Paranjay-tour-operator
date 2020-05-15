@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Playfair Display',cursive;
+}
+/*@media(max-width:670px)
+{
+    .spot{
+        max-height: 50%;
+    }
+    .describe{
+        max-height:50%;
+    }
+}*/
+html {
+    scroll-behavior: smooth;
+  }
+.banner{
+    height: 35vw;
+    background: url("../images/pic34.jpg");
+    opacity: 1;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.event{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+}
+.text{
+    width: 80%;
+    /*margin-top: 1vw;
+    margin-left: 2vw;*/
+    height: 25vw;
+    font-size: 1.2vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 1vw;
+    border-radius: 1vw;
+   /* border: 1vw solid gold;*/
+}
+.overlap{
+    width: 80%;
+    height:100%;
+    border-radius: 3vw;
+    border:white 0.25vw solid;
+    transition: transform 2s 0.2s;
+   visibility: hidden;
+}
+
+.content{
+    background-color:rgba(128, 128, 128,0.7);
+    border-left: white 0.4vw solid;
+    width: 80%;
+    height: 50%;
+    position: relative;
+    left:20%;
+    top: -8%;
+    text-align: center;
+    visibility: hidden;
+    transition: transform 2s 0.1s;   
+}
+.content hr{
+    border: 1px solid rgba(255, 255, 255, 0.41);
+}
+.content p{
+    color: white;
+}
+.eventheading{
+    transition: transform 1s;
+    color: white;
+    font-weight: 700;
+}
+.event:hover .content{
+    visibility: visible;
+    overflow: hidden;
+    transform: translate3d(-15%,0,0);
+}
+.event:hover .eventheading{
+    overflow: hidden;
+    transform: translate3d(0,-100%,0);
+}
+.up{
+    opacity: 1;
+    transform: translate3d(0,-20%,0);
+}
+
+.image{
+    height: 20vw;
+    width: 85%;
+    border-radius:1vw ;
+    
+    margin: auto;
+}
+.tile{
+    height: 20vw;
+    width: 80%;
+    border-radius: 1vw;
+    background-color: rgba(0, 0, 0,0.5);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+}
+.culture:hover .tile{
+    visibility: visible;
+}
+.festival{
+    position: relative;
+}
+.culture,.festival{
+    margin:auto;
+}
+.enclose{
+    width:90%;
+    margin:auto;
+}
+.culture{
+    text-align: center;
+    position: relative;
+}
+.text{
+    margin: 1vw auto;
+}
+.tile{
+    margin: 0vw auto;
+}
+.unit{
+    margin: auto;
+    height: 30vw;
+    position: relative; 
+    
+}
+.place{
+    min-height:26vw;
+    margin: 2vw;
+}
+.spot{
+    background-size: cover;
+    border: 0.2vw solid teal;
+    border-radius: 1vw;
+    min-height: 13vw;
+    max-height: 26vw;
+}
+.describe{
+    border-radius: 1vw;
+    text-align: center;
+    background-color:   #FCEEC5;
+    color: crimson;
+    font-weight: 500;
+    padding-top: 2vw;
+    border: 0.2vw solid crimson;
+    border-radius: 1vw;
+    min-height: 13vw;
+    max-height: 26vw;
+}
+footer{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    height: 25vw;
+}

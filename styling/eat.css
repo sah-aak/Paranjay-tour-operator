@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.banner{
+    height: 40vw;
+    background: url("../images/pic24.jpg");
+    opacity: 1;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.event{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+}
+.overlap{
+    width: 80%;
+    height:100%;
+    border-radius: 3vw;
+    border:white 0.25vw solid;
+   visibility: hidden;
+}
+
+.upper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    border: white 0.25vw solid;
+    height: 10vw;
+    width: 40%;
+    position: relative;
+    left:6.5vw;
+    top: 4vw;
+    z-index: 20;
+    visibility: hidden;
+}
+.content{
+    background-color:rgba(128, 128, 128,0.4);
+    width: 80%;
+    height: 90%;
+    position: relative;
+    left:10%;
+    top: 5%;
+    text-align: center;
+    border-radius: 3vw;
+}
+
+.unit:hover .upper{
+    visibility: visible;
+}
+.unit:hover .overlap{
+    visibility: visible;
+    height: 25vw;
+}
+.unit:hover .event{
+    visibility: hidden;
+}
+.variety{
+    width: 20%;
+    height: 30vw;
+    position: absolute;
+    top: 130vw;
+    left: 2vw;
+}
+.variety table{
+    margin-left: 6vw;
+}
+.variety table td{
+    padding-left:1vw;
+}
+.variety table .tag{
+    padding: 1vw 2vw 1vw 1vw;
+    background:linear-gradient(rgb(248, 191, 21),rgb(245, 212, 113));
+    color: white;
+    border-radius: 1vw;
+}
+.restaurant{
+    height: 18vw;
+    width: 75%;
+    position: relative;
+    left: 22vw;
+}
+.img{
+   border-radius: 1vw;
+   background-size: cover;
+}
+.cover{
+    visibility: hidden;
+    border-radius: 1vw;
+    background-color: rgba(91, 89, 89,0.4);
+}
+.description{
+    color: white;
+    border-radius: 1vw;
+    background: linear-gradient(180deg,rgb(1, 80, 192),rgba(1, 80, 192,0.3));
+}
+.option{
+    background: linear-gradient(rgb(248, 191, 21),rgb(245, 212, 113));
+    font-weight: 600;
+    padding: 0.5vw;
+    font-size: 1vw;
+}
+footer{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    height: 25vw;
+}

@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+@keyframes example{
+    0%{background-image:url("E:/seproject/images/pic7.jpg")}
+    16%{background-image:url("E:/seproject/images/pic8.jpg")}
+    40%{background-image:url("E:/seproject/images/pic9.jpg")}
+    65%{background-image:url("E:/seproject/images/pic38.jpg")}
+    85%{background-image:url("E:/seproject/images/pic39.jpg")}
+    100%{background-image:url("E:/seproject/images/pic7.jpg")}
+  }
+@keyframes gradient{
+  0% {
+    background-position: 10% 50%;
+}
+50% {
+    background-position: 40% 50%;
+}
+100% {
+    background-position: 10% 50%;
+}
+}
+header{
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    height: 6vw;
+    color: white;
+    font-size: 1.4vw;
+    border: 0;
+    width: 100%;  
+    z-index: 10; 
+}
+header li{
+    display: inline;
+    padding: 2vw;
+}
+header li a{
+    color: white;
+}
+header li a:hover{
+    color: rgb(26, 212, 23);
+}
+.nav1{
+    list-style-type: none;
+    width: 10%;
+    position: fixed;
+    top: 10vw;
+    left: 2vw;
+}
+.nav1 a{
+    color: rgb(240, 109, 15);
+    font-weight: 700;
+}
+.nav1 a:hover{
+    color: rgb(26, 212, 23);
+    font-weight: 700;
+}
+.nav2{
+    align-items: flex-end;
+    list-style-type: none;
+    width: 10%;
+    position: fixed;
+    top: 10vw;
+    right: 0vw;
+    margin-right: 0;
+    text-align: center;
+    font-size: 1.4vw;
+    
+}
+.nav2 a{
+    color: rgb(240, 109, 15);
+    font-weight: 700;
+}
+.nav2 a:hover{
+    color: rgb(26, 212, 23);
+    font-weight: 700;
+}
+.nav1img{
+    clip-path: circle();
+}
+.banner{
+    background: url(E:/seproject/images/pic4.gif)center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vw;
+    color: white;
+    font-weight: 900;
+
+}
+.banner p{
+    padding-top: 15vw;
+    color: rgb(240, 109, 15);
+    font-family: Parisienne;
+    padding-left: 25vw;
+    font-size: 2.5vw;
+}
+.banner p span{
+    padding-left: 25vw;
+    
+}
+.mainhead{
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 0.5vw;
+    font-weight: 900;
+    font-size: 7vw;
+    padding-left: 10vw;
+    background: linear-gradient(110deg,#004875 33%,transparent 0),linear-gradient(110deg,rgba(0,72,117,.507) 38%,#004875 0);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient 10s ease infinite;
+    transform: translateY(-6vw);
+}
+.about{
+   height: 45vw;
+}
+.image{
+    margin-left: 2vw;
+    margin-top: 6vw;
+    height: 34vw;
+    width: 90%;
+    background-image: url("E:/seproject/images/pic7.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation:example 20s infinite;
+
+}
+.content{
+    padding: 4vw;
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    height: 40vw;
+    background-image: url('../images/pic14.jpg');
+    background-size: cover;
+}
+.contact-content{
+    height:80%;
+}
+input,textarea,input:focus,textarea:focus{
+    color:rgb(1, 110, 38);
+    background-color: rgb(195, 234, 195);
+    border: rgb(1, 110, 38) 0.2vw solid;
+    padding: 0.5vw;
+}
+input{
+    height: 10%;
+    margin: 0vw;
+}
+input:hover,textarea:hover{
+    border: rgb(1, 110, 38) 0.3vw solid;
+}
+.contact button{
+    background-color: rgb(1, 110, 38);
+    color: white;
+    font-weight: 800;
+    padding: 0.5vw;
+}
+footer{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    height: 25vw;
+}
